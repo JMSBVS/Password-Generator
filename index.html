@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap"
+        rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="main">
+        <section class="header">
+            <h1 class="title">Generate a <span id="title-color-alt">random password</span></h1>
+
+            <p>Never use an insecure password again.</p>
+            <div class="generate-section">
+                <div class="switches">
+                    <div class="Eight">
+                        <input type="radio" name="length" class="char-length-switch" id="eight-char">
+                        <label for="eight-char" class="switch-label">Eight characters</label>
+                    </div>
+                    <div class="fifteen">
+                        <input type="radio" name="length" class="char-length-switch" id="fifteen-char" checked>
+                        <label for="fifteen-char" class="switch-label">Fifteen characters</label>
+                    </div>
+                </div>
+                <button class="generate">Generate Password</button>
+            </div>
+        </section>
+        <hr>
+        <section class="results">
+            <div class="result"></div>
+        </section>
+        <section class="copied-section"></section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
