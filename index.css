@@ -1,9 +1,9 @@
 .main {
-    width: 550px;
+    max-width: 550px;
     height: 550px;
     background-color: #fdfdff;
     margin: auto;
-    border: #393d3f 30px solid;
+    border: #393d3f 10px solid;
     border-radius: 10px;
 }
 
@@ -139,4 +139,26 @@ hr {
     margin: auto;
     margin-top: 40px;
     transition: 1s;
+}
+
+@media (max-width: 600px) {
+
+    .title {
+        margin-top: 50px;
+    }
+
+    .generate-section {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .generate {
+        margin-top: 30px;
+    }
+
+    .result {
+        width: 70%;
+        margin-top: 70px;
+    }
+
 }
